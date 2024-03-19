@@ -1,0 +1,204 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API",
+        "version": "0.1"
+    },
+    "paths": {
+        "/api/auth/login": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "operationId": "dd51a484b7fa0f97c7680fdbde14cf5f",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/auth/me": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "operationId": "68b5ff7a125884190d8fc6d6e5c6dffc",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/auth/logout": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "operationId": "df9bdc6c7a6d9f20b983526b2ec0f698",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/auth/refresh": {
+            "post": {
+                "tags": [
+                    "Auth"
+                ],
+                "operationId": "30c20c52f5f72828d8c531fd7c9ea3e7",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/reaction/like/tweet/1": {
+            "get": {
+                "tags": [
+                    "Reactions"
+                ],
+                "operationId": "4e9d060a0705d4f8c5d6f9ecc7348597",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/reaction/count/like/tweet/1": {
+            "get": {
+                "tags": [
+                    "Reactions"
+                ],
+                "operationId": "e2335ac702bd6f70a5912c15463acc97",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/tweet/1": {
+            "get": {
+                "tags": [
+                    "Tweets"
+                ],
+                "operationId": "73848f2b8ba185573e1b7f601d7343f9",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/user/clarkeadg": {
+            "get": {
+                "tags": [
+                    "Users"
+                ],
+                "operationId": "c8e6c808d8df8013569c1459d1bf70fb",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/videos/artists": {
+            "get": {
+                "tags": [
+                    "Videos"
+                ],
+                "operationId": "bd4d83bbed13d6af4d1711951ce74cb9",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/videos/categories": {
+            "get": {
+                "tags": [
+                    "Videos"
+                ],
+                "operationId": "eab5133fecaef3b37da5e607404ace2c",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/videos/artist/avril-lavigne": {
+            "get": {
+                "tags": [
+                    "Videos"
+                ],
+                "operationId": "3cce0c406ec06dc78d69ed4f9dfad977",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/videos/category/top": {
+            "get": {
+                "tags": [
+                    "Videos"
+                ],
+                "operationId": "33846f70fd1e2f7001787285231d69ac",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/videos/video/girlfriend-avril-lavigne": {
+            "get": {
+                "tags": [
+                    "Videos"
+                ],
+                "operationId": "dafddef4b82b82c5146fe41e86aaff6f",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/videos/search": {
+            "get": {
+                "tags": [
+                    "Videos"
+                ],
+                "operationId": "c916deea3affce1e40b22e583441f5e1",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        },
+        "/api/videos/search/artists": {
+            "get": {
+                "tags": [
+                    "Videos"
+                ],
+                "operationId": "f8f8bd9a8bdb06a09614a37b009e4ca1",
+                "responses": {
+                    "200": {
+                        "description": "An example endpoint"
+                    }
+                }
+            }
+        }
+    }
+}

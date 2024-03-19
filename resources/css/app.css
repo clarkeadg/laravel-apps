@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] { display: none; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-\[--cols-lg\] { grid-template-columns: var(--cols-lg); }
+}
+
+main { padding-bottom: 8rem; max-width: 100vw; overflow-x: hidden; }
+
+footer { height: 8rem;}
+footer a:hover { text-decoration: underline; }
+
+.nav-side a.active { color: #000; }
+.nav-right a.active { color: #000; }
+.nav-secondary a.active { color: #000; }
+.topmusicvideos nav a.active { color: #fff; }
+.tabs a.active { background: #fff; border-bottom: 1px solid #fff; }
+.twitter-tabs a.active { border-bottom: 2px solid rgb(59, 130, 246) }
+
+.image-hover img { transition: 0.4s all; transform: scale(1); }
+.image-hover:hover img { transform: scale(1.05); }
+
+.aspect-16x9 { padding-top: 56.66%; position: relative; }
+.aspect-16x9 > * { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.slick-initialized { display: flex; }
+.slick-slider { width: 100%; }
+.slick-slider .slick-list { width: 100%; }
+.slick-slider .slick-arrow { z-index: 1; }
+.slick-slider .slick-arrow:before { font-size: 3rem; }
+.slick-slider .slick-prev { left: 1rem; }
+.slick-slider .slick-next { right: 2.5rem; }
+
+.photos-slider-big .slick-track { display: flex; }
+.photos-slider-big .slick-track .slick-slide { display: flex; height: auto; align-items: center; justify-content: center; }
+
+.category-slider .slick-arrow:before { color: #000; }
+.category-slider .slick-prev { left: -1rem; }
+.category-slider .slick-next { right: 1rem; }
+
+.photos-slider .slick-arrow:before { color: #000; }
+.photos-slider .slick-prev { left: -3rem; }
+.photos-slider .slick-next { right: -1rem; }
+
+.fi-fo-toggle { background-color: #ddd; }
+.fi-fo-toggle[aria-checked="true"] { background-color: #2195ca; }
+div[x-ignore] { display: none; }
+
+.w-11 { width: 2.75rem; }
+.gap-x-3 { column-gap: 0.75rem; }
+.translate-x-5 { --tw-translate-x: 1.25rem; }
+
+.tweet-content p { margin-bottom: 1rem; }
+
+.tweet-create .hide-photo-upload .col-\[--col-span-default\]:nth-of-type(2) { display: none; }
