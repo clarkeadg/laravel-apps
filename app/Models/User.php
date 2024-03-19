@@ -141,7 +141,7 @@ class User extends Authenticatable implements FilamentUser, HasMedia, JWTSubject
     {
         if ($panel->getId() === 'admin') {
             //return str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail()
-            return ($this->email == 'clarkeadg@yahoo.com') && $this->hasVerifiedEmail();
+            return ($this->email == 'clarkeadg@yahoo.com' || $this->email == 'demo@demo.com') && $this->hasVerifiedEmail();
         }
         
         return true;
