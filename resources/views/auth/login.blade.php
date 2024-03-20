@@ -14,8 +14,10 @@
 
         <p>
             Login with demo account<br/>
+            <br/>
             email: demo@demo.com<br/>
             password: demo1234<br/>
+            <br/>
         </p>
 
         <form method="POST" action="{{ route('login') }}">
