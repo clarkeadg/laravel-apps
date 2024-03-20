@@ -20,10 +20,11 @@ export default {
                 'bg-black': {
                     DEFAULT: '#000'
                 }
-            },
-            darkMode: 'false'
+            },            
         },
     },
 
     plugins: [forms, typography],
+
+    darkMode: 'false'
 };
