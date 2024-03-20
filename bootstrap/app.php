@@ -26,10 +26,6 @@ $app = new Illuminate\Foundation\Application(
 |
 */
 
-$app->withMiddleware(function (Middleware $middleware) {
-    $middleware->trustProxies(at: '*');
-});
-
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
     App\Http\Kernel::class
