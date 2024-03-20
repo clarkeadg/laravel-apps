@@ -14,7 +14,7 @@
     </h5>
     <!-- Button Bar -->
     @auth
-        <div class="flex justify-end gap-4">
+        <div class="flex justify-center md:justify-end gap-4">
             <button onclick="Livewire.dispatch('openModal', { component: 'modals.modal-list-add', arguments: { app: '{{ $app }}', view: '.modals._lists-add', id: {{ $video->id }} }})" class="flex bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                 <x-heroicon-o-list-bullet class="h-6 w-6"/>
                 <span class="ml-2">Add to Playlist</span>
