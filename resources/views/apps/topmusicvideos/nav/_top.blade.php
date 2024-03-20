@@ -1,4 +1,4 @@
-<div class="bg-black xmax-w-7xl mx-auto px-4">
+<div class="bg-black xmax-w-7xl mx-auto pl-2 pr-4 md:px-4">
     <div class="flex justify-between h-16"> 
 
         <div class="flex items-center">

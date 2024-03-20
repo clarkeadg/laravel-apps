@@ -1,6 +1,6 @@
 <nav x-data="{ open: false }" class="border-b border-gray-200">
     <div class="bg-white w-full">
-        <div class="flex justify-between h-16 max-w-7xl mx-auto px-6">            
+        <div class="flex justify-between h-16 max-w-7xl mx-auto pl-4 pr-6 md:px-6">            
 
             <div class="flex items-center">
                 <!-- Logo -->
@@ -11,7 +11,7 @@
                 </div> 
                 
                 <!-- Search -->
-                <div class="px-6">
+                <div class="pl-5 pr-4 md:px-6">
                     @livewire('global-search', [
                         'app' => $app,
                         'categories' => [
