@@ -5,7 +5,8 @@
         @auth
             <div class="p-4 bg-white border border-gray-300 rounded-lg mb-4">            
                 @livewire('tweets.tweet-create', [
-                    'app' => $app
+                    'app' => $app,
+                    'redirect' => true
                 ])            
             </div>
         @endauth
