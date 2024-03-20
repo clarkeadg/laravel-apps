@@ -16,7 +16,7 @@
             
             <!-- Close Modal Button -->
             <a id="closePhotosModal" href="#" class="absolute top-10 right-10 pointer-events-auto">
-                <x-heroicon-o-x-circle class="h-12 w-12 text-white dark:text-primary-400"/>
+                <x-heroicon-o-x-circle class="h-12 w-12 text-white"/>
             </a>
 
             <!--

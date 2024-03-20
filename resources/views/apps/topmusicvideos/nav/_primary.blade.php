@@ -2,7 +2,7 @@
     <!-- Navigation Links Left -->
     <div class="flex items-center gap-8">
         <x-nav-link href="{{ route($app.'.home') }}" :active="request()->routeIs($app.'.home')" class="uppercase text-white hover:text-white focus:text-white">
-            <x-heroicon-o-home class="h-6 w-6 text-white dark:text-primary-400"/>
+            <x-heroicon-o-home class="h-6 w-6 text-white"/>
         </x-nav-link>
         <x-nav-link href="{{ route($app.'.categories') }}" :active="request()->routeIs($app.'.categories')" class="uppercase text-white hover:text-white focus:text-white">
             {{ __('Categories') }}
