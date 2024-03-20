@@ -17,10 +17,10 @@
         </div>
         <!-- Info --> 
         <div class="w-full border-r border-b border-l border-gray-200 lg:border-l-0 lg:border-t bg-white rounded-b lg:rounded-b-none p-4 lg:p-0 lg:pl-4 flex flex-col items-center justify-center lg:items-start leading-normal truncate">
-            <div class="text-gray-900 font-bold text-lg truncate">
+            <div class="text-gray-900 font-bold text-sm md:text-lg truncate">
                 {{ $video->name }}
             </div>
-            <p class="text-gray-700 text-base truncate">
+            <p class="text-gray-700 text-sm md:text-base truncate">
                 {{ $video->artist->name }}
             </p>
         </div>

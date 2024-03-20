@@ -39,7 +39,7 @@
                                                     </div>
                                                     <!-- Info --> 
                                                     <div class="w-full border-r border-b border-l border-gray-200 lg:border-l-0 lg:border-t bg-white rounded-b lg:rounded-b-none p-4 lg:p-0 lg:pl-4 flex flex-col items-center justify-center lg:items-start leading-normal truncate">
-                                                        <div class="text-sm text-gray-900 font-bold text-lg truncate">
+                                                        <div class="text-sm text-gray-900 font-bold md:text-lg md:truncate">
                                                             {{ $item->name }}
                                                         </div>
                                                     </div>
@@ -81,11 +81,11 @@
                                                         <img class="w-full" src="{{ $item->thumbnail }}" alt="" />
                                                     </div>
                                                     <!-- Info --> 
-                                                    <div class="w-full border-r border-b border-l border-gray-200 lg:border-l-0 lg:border-t bg-white rounded-b lg:rounded-b-none p-4 lg:p-0 lg:pl-4 flex flex-col items-center justify-center lg:items-start leading-normal truncate">
-                                                        <div class="text-sm text-gray-900 font-bold text-lg truncate">
+                                                    <div class="w-full border-r border-b border-l border-gray-200 lg:border-l-0 lg:border-t bg-white rounded-b lg:rounded-b-none p-4 lg:p-0 lg:pl-4 flex flex-col items-center justify-center lg:items-start leading-normal md:truncate">
+                                                        <div class="text-sm text-gray-900 font-bold md:text-lg md:truncate">
                                                             {{ $item->name }}
                                                         </div>
-                                                        <p class="text-sm text-gray-700 text-base truncate">
+                                                        <p class="text-sm text-gray-700 md:text-base md:truncate">
                                                             {{ $item->artist->name }}
                                                         </p>
                                                     </div>

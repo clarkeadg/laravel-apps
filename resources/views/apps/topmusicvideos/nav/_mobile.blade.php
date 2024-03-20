@@ -1,4 +1,16 @@
-<div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden bg-white min-h-screen">        
+<div :class="{'block': open, 'hidden': ! open}" class="hidden md:hidden bg-white min-h-screen">        
+    
+    <!-- Search -->
+    <div class="flex w-full justify-center py-2">
+        @livewire('global-search', [
+            'app' => $app,
+            'categories' => [
+                'Videos' => [],
+                'Artists' => [],
+            ]
+        ])
+    </div>
+
     @auth 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">

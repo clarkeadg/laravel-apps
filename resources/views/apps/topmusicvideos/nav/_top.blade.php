@@ -10,7 +10,7 @@
             </div>
         
             <!-- Search -->
-            <div class="hidden sm:block px-6">
+            <div class="hidden md:block px-6">
                 @livewire('global-search', [
                     'app' => $app,
                     'categories' => [
@@ -21,7 +21,7 @@
             </div>
         </div>
         
-        <div class="hidden sm:flex sm:items-center sm:ml-6">
+        <div class="hidden md:flex sm:items-center sm:ml-6">
             <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex items-center mr-5">
                 
                 @auth

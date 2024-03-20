@@ -17,10 +17,10 @@
         </div>
         <!-- Info -->
         <div class="p-4"> 
-            <h5 class="mb-2 text-xl font-bold tracking-tight text-center text-gray-900 truncate">
+            <h5 class="mb-2 text-sm md:text-xl font-bold tracking-tight text-center text-gray-900 md:truncate">
                 {{ $video->name }}
             </h5>
-            <p class="text-gray-700 text-base text-center truncate">
+            <p class="text-gray-700 text-sm md:text-base text-center md:truncate">
                 {{ $video->artist->name }}
             </p> 
         </div>
