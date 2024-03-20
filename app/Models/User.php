@@ -220,8 +220,7 @@ class User extends Authenticatable implements FilamentUser, HasMedia, JWTSubject
                 $this
                     ->addMediaConversion('thumb')
                     ->width(200)
-                    ->height(200)
-                    ->nonQueued();
+                    ->height(200);
             });
     }    
 

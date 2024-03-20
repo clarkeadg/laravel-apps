@@ -187,8 +187,7 @@ class Tweet extends Model implements HasMedia
                 $this
                     ->addMediaConversion('thumb')
                     ->width(500)
-                    ->height(500)
-                    ->nonQueued();
+                    ->height(500);
             });
     } 
 }
