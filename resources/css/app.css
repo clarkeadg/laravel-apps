@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  html {
-    color-scheme: light !important;
-  }
-}
-
 [x-cloak] { display: none; }
 
 .sr-only {
