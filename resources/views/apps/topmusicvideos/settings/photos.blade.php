@@ -27,14 +27,14 @@
 
             <div class="py-4">
                 @foreach (Auth::user()->photos as $photo)
-                    <div class="py-2 flex justify-between items-center">
+                    <div class="py-2 flex gap-2 justify-between items-center">
                         <img src="{{ $photo->getUrl('thumb') }}"/>
                         <div class="flex gap-4">
                             @if (Auth::user()->photo_id != $photo->id)
                                 <form method="POST" action="/settings/photos/set_main">
                                     @csrf
                                     <input type="hidden" name="photo_id" value="{{ $photo->id }}">
-                                    <button type="submit" class="mt-4 py-2 px-4 rounded-md text-white bg-blue-600">
+                                    <button type="submit" class="mt-4 py-2 px-4 rounded-md text-white bg-blue-600 text-xs md:text-sm">
                                         Set Main Photo
                                     </button>
                                 </form>
@@ -42,7 +42,7 @@
                             <form method="POST" action="/settings/photos/delete">
                                 @csrf
                                 <input type="hidden" name="photo_id" value="{{ $photo->id }}">
-                                <button type="submit" class="mt-4 py-2 px-4 rounded-md text-white bg-red-600">
+                                <button type="submit" class="mt-4 py-2 px-4 rounded-md text-white bg-red-600 text-xs md:text-sm">
                                     Delete
                                 </button>
                             </form>
