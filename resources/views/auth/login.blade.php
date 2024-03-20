@@ -12,6 +12,12 @@
             </div>
         @endif
 
+        <p>
+            Login with demo account<br/>
+            email: demo@demo.com<br/>
+            password: demo1234<br/>
+        </p>
+
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
