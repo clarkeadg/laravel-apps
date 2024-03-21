@@ -48,7 +48,7 @@
                         <div class="">
                             <button x-cloak x-show="hide" x-on:click="hide = false" class="relative w-full image-hover img-container overflow-hidden border border-gray-200 rounded-lg">
                                 <div class="blur-lg">                                    
-                                    <img class="w-full" src="{{ $photo->getUrl('thumb') }}" alt="" />                                    
+                                    <img class="w-full" src="{{ $photo->getAvailableUrl(['thumb']) }}" alt="" />                                    
                                 </div>
                                 <div class="flex w-full h-full justify-center items-center absolute top-0 left-0">
                                     <div class="bg-red-500 px-4 py-2 rounded-full text-white text-sm">
@@ -65,7 +65,7 @@
                                         </video>
                                     @break
                                     @default
-                                        <img class="w-full" src="{{ $photo->getUrl('thumb') }}" alt="" /> 
+                                        <img class="w-full" src="{{ $photo->getAvailableUrl(['thumb']) }}" alt="" /> 
                                     @break
                                 @endswitch
                             </button>

@@ -24,7 +24,7 @@
             @foreach ($items as $photo)
                 <div class="relative">
                     <button wire:click="setCoverPhoto({{ $photo->id }})" class="w-full image-hover img-container overflow-hidden border border-gray-200 rounded-lg @if($photo->id == Auth::user()->cover_photo_id) border-4 border-red-200 @endif">
-                        <img class="w-full" src="{{ $photo->getUrl('thumb') }}" alt="" />                            
+                        <img class="w-full" src="{{ $photo->getAvailableUrl(['thumb']) }}" alt="" />                            
                     </button>
                     <button @click="Livewire.dispatch('openModal', { component: 'modals.modal-delete', arguments: { app: '{{ $app }}', view: '.modals._photo-delete', name: 'delete-profile-photo', id: {{ $photo->id }} }})" class="absolute top-1 right-1 p-1 bg-white border border-gray-200 rounded-lg hover:bg-gray-200">
                         <x-heroicon-o-x-mark class="h-3 w-3"/>
@@ -48,7 +48,7 @@
             @foreach ($items as $photo)
                 <div class="relative">
                     <button wire:click="setMainPhoto({{ $photo->id }})" class="w-full image-hover img-container overflow-hidden border border-gray-200 rounded-lg @if($photo->id == Auth::user()->photo_id) border-4 border-red-200 @endif">
-                        <img class="w-full" src="{{ $photo->getUrl('thumb') }}" alt="" />                            
+                        <img class="w-full" src="{{ $photo->getAvailableUrl(['thumb']) }}" alt="" />                            
                     </button>
                     <button @click="Livewire.dispatch('openModal', { component: 'modals.modal-delete', arguments: { app: '{{ $app }}', view: '.modals._photo-delete', name: 'delete-profile-photo', id: {{ $photo->id }} }})" class="absolute top-1 right-1 p-1 bg-white border border-gray-200 rounded-lg hover:bg-gray-200">
                         <x-heroicon-o-x-mark class="h-3 w-3"/>

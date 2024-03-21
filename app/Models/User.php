@@ -200,7 +200,7 @@ class User extends Authenticatable implements FilamentUser, HasMedia, JWTSubject
 
     public function getAvatarThumbAttribute() {
         $photo = $this->getMedia('photos')->where('id', $this->photo_id)->first();
-        return isset($photo) ? $photo->getUrl('thumb') : "/images/avatar.png";
+        return isset($photo) ? $photo->getAvailableUrl(['thumb']) : "/images/avatar.png";
     }
 
     public function getCoverPhotoAttribute() {

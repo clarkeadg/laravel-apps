@@ -5,7 +5,7 @@
             <a class="photos-slider-card px-2" href="#" data-index="{{ $loop->index }}">
                 <!-- Image -->
                 <div class="image-hover img-container overflow-hidden border border-gray-200 rounded-lg">
-                    <img class="w-full" src="{{ $photo->getUrl('thumb') }}" alt="" />  
+                    <img class="w-full" src="{{ $photo->getAvailableUrl(['thumb']) }}" alt="" />  
                 </div>
             </a>
         @endforeach

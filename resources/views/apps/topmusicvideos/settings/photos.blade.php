@@ -28,7 +28,7 @@
             <div class="py-4">
                 @foreach (Auth::user()->photos as $photo)
                     <div class="py-2 flex gap-2 justify-between items-center">
-                        <img src="{{ $photo->getUrl('thumb') }}"/>
+                        <img src="{{ $photo->getAvailableUrl(['thumb']) }}"/>
                         <div class="flex gap-4">
                             @if (Auth::user()->photo_id != $photo->id)
                                 <form method="POST" action="/settings/photos/set_main">

@@ -56,7 +56,7 @@
                                 </video>
                             @break
                             @default
-                                <img class="w-full" src="{{ $photo->getUrl('thumb') }}" alt="" />
+                                <img class="w-full" src="{{ $photo->getAvailableUrl(['thumb']) }}" alt="" />
                             @break
                         @endswitch                          
                     </div>
