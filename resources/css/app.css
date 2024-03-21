@@ -20,7 +20,7 @@
   .lg\:grid-cols-\[--cols-lg\] { grid-template-columns: var(--cols-lg); }
 }
 
-main { padding-bottom: 8rem; max-width: 100vw; overflow-x: hidden; }
+main { padding-bottom: 8rem; max-width: 100vw; }
 
 footer { height: 8rem;}
 footer a:hover { text-decoration: underline; }

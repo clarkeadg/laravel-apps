@@ -1,4 +1,4 @@
-<div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden bg-white min-h-screen">         
+<div :class="{'block': open, 'hidden': !open}" class="hidden sm:hidden bg-white min-h-screen">         
     @auth 
         <div class="py-4 border-t border-gray-200">
             <div class="flex items-center px-4">                    

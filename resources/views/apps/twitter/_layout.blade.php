@@ -28,7 +28,7 @@
     <body class="font-sans antialiased bg-gray-100">
         <x-banner />
         
-        <div class="min-h-screen relative">
+        <div x-data="{ open: false }" class="min-h-screen relative">
             <div class="fixed top-0 left-0 w-full z-10 pointer-events-none">
                 <div class="pointer-events-auto">
                     @relativeInclude('nav._top')
@@ -43,7 +43,7 @@
                     </div>
                 </div>
             </div> 
-            <main class="flex justify-center w-full max-w-7xl mx-auto pt-20 min-h-screen">
+            <main :class="{'flex': !open, 'hidden': open}" class="sm:flex justify-center w-full max-w-7xl mx-auto pt-20 min-h-screen">
                 <div class="w-full md:w-1/2 px-2 md:px-0">
                     @yield('content')
                 </div>

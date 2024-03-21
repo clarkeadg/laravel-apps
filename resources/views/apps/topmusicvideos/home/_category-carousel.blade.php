@@ -1,4 +1,4 @@
-<div class="px-7">
+<div class="md:px-7">
     <div class="category-slider hidden px-10 relative">
         @foreach ($category['videos'] as $video)
             <div class="px-2">

@@ -28,12 +28,11 @@
     <body class="font-sans antialiased topmusicvideos">
         <x-banner />
 
-        <div class="min-h-screen bg-gray-100 relative">
-            <div class="sticky top-0 z-10">
-                <nav x-data="{ open: false }" class="border-b border-gray-600">
+        <div x-data="{ open: false }" class="min-h-screen bg-gray-100 relative">
+            <div :class="{'fixed': open, 'sticky': !open}" class="sticky top-0 left-0 w-full z-10">
+                <nav class="border-b border-gray-600">
                     @relativeInclude('nav._top')
-                    @relativeInclude('nav._primary')
-                    @relativeInclude('nav._mobile')
+                    @relativeInclude('nav._primary')                    
                 </nav>
             </div>
 
@@ -47,7 +46,7 @@
             @endif
 
             <!-- Page Content -->
-            <main>
+            <main :class="{'block': !open, 'hidden': open}" class="md:block">
                 @yield('content')
             </main>
 
