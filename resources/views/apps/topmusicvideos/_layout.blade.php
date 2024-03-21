@@ -50,7 +50,9 @@
                 @yield('content')
             </main>
 
-            @include('footer')
+            <div :class="{'block': !open, 'hidden': open}" class="md:block">
+                @include('footer')
+            </div>
         </div>
 
         @stack('modals')
